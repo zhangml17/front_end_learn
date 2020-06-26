@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>锚点</title>
+    <base target="_blank" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+        .content-wrapper div {
+            width: 100%;
+            height: 700px;
+            background-color: #efefef;
+        }
+
+        .goto_top {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            width: 100px;
+            height: 60px;
+            background-color: #e4ac03;
+            text-align:center;
+        }
+        .goto_top a {
+            position: relative;
+            top: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="anchor_point_wrapper">
+        <div class="catalog-wrapper">
+            <ul>
+                <li><a href="#catalog_item1">章节一</a></li>
+                <li><a href="#catalog_item2">章节二</a></li>
+                <li><a href=".ss">章节三</a></li>
+                <li><a href="#catalog_item4">章节四</a></li>
+                <li><a href="https://www.bootcdn.cn">去bootcdn</a></li>
+            </ul>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 id="catalog_item1">章节一</h2>
+            <div></div>
+            <h2 id="catalog_item2">章节二</h2>
+            <div></div>
+            <h2 id="catalog_item3" class="ss">章节三</h2>
+            <div></div>
+            <h2 id="catalog_item4">章节四</h2>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="goto_top">
+        <a href="#">回到顶部</a>
+    </div>
+
+</body>
+</html>
